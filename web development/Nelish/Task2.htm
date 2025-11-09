@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        body {
+            font-family: "Allura", Tahoma, sans-serif;
+            background-color: white;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Heading */
+        #main-heading {
+            background-color: red;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+            padding: 30px;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        /* Table */
+        .info-table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 40px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .info-table th {
+            background-color: magenta;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+        }
+
+        .info-table td {
+            padding: 12px;
+            background-color: #fff;
+            font-size: 16px;
+        }
+
+        .info-table tr:nth-child(even) td {
+            background-color: #f2f9ff;
+        }
+
+        /* Blockquote */
+        .quote {
+            width: 70%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #e8f8ff;
+            border-left: 6px solid red;
+            font-style: italic;
+            font-size: 18px;
+            border-radius: 6px;
+        }
+
+        /* Form */
+        #contact-form {
+            width: 350px;
+            background-color: #ffffff;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        #contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        #contact-form input[type="text"],
+        #contact-form input[type="email"],
+        #contact-form input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        #contact-form input[type="submit"] {
+            width: 100%;
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        #contact-form input[type="submit"]:hover {
+            background-color: #0097a7;
+        }
+
+        /* Footer link */
+        .link {
+            text-align: center;
+            margin: 30px;
+            font-size: 18px;
+        }
+
+        .link a {
+            color: #0078ff;
+            text-decoration: none;
+        }
+
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main-heading">About Me</h1>
+
+    <table class="info-table" border="2">
+        <thead>
+            <tr>
+                <th>Roll</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Nelish Maharjan</td>
+                <td>6767676767</td>
+                <td>Kathmandu, Nepal</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <blockquote class="quote" cite="https://softwarica.edu.np">
+        “Hi”
+    </blockquote>
+
+    <form id="contact-form" action="">
+        <label for="">First Name:</label>
+        <input type="text" placeholder="Enter your first name">
+
+        <label for="">Last Name:</label>
+        <input type="text" placeholder="Enter your last name">
+
+        <label for="">Email:</label>
+        <input type="email" placeholder="example@gmail.com">
+
+        <label for="">Password:</label>
+        <input type="password" placeholder="Password">
+
+        <label for="">Confirm Password:</label>
+        <input type="password" placeholder="Confirm password">
+
+        <input type="submit" value="Create Account">
+    </form>
+
+    <div class="link">
+        Visit <a href="https://google.com" target="_blank">Google</a>
+    </div>
+</body>
+</html>
