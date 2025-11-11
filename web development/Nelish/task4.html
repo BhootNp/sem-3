@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweden Flag</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .flag {
+      width: 480px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      border: 2px solid #000;
+      background-color: aqua;
+    }
+
+    
+    .top,
+    .bottom {
+      flex: 1;
+      display: flex;
+    }
+
+    .top-left,
+    .bottom-left {
+      flex: 5;
+      background-color: #006aa7;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .top-right,
+    .bottom-right {
+      flex: 8;
+      background-color: #006aa7;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .vertical-bar {
+      width: 40px;
+      background-color: #fecc00;
+    }
+
+    .horizontal-bar {
+      height: 40px;
+      background-color: #fecc00;
+    }
+  </style>
+</head>
+<body>
+  <div class="flag">
+    <div class="top">
+      <div class="top-left">
+        <div class="vertical-bar"></div>
+      </div>
+      <div class="top-right"></div>
+    </div>
+
+    <div class="horizontal-bar"></div>
+
+    <div class="bottom">
+      <div class="bottom-left">
+        <div class="vertical-bar"></div>
+      </div>
+      <div class="bottom-right"></div>
+    </div>
+  </div>
+</body>
+</html>
