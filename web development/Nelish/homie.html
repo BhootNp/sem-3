@@ -9,11 +9,25 @@
 
 <body>
     <script>
-        var a= 10
-        var b= 3
-        console.log(a<=15 && b>=3);
-        console.log(a<=15 || b>3);
-        console.log(!(a<=15));
+        function add(a, b) {
+            console.log(a + b);
+        }
+        add(5, 10);
+
+        const add = function (a, b) {
+            console.log(a + b);
+        }
+        add(2,4)
+
+        const add = (a, b) => a + b
+            console.log(a + b);
+        
+        let marks = 40 
+        if (marks >= 33) {
+            console.log("pass");
+        } else {
+            console.log("fail");
+        }
     </script>
 </body>
 </html>
