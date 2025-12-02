@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        
+        var a=3;
+        var b=4;
+        function multiply(a, b) {
+            console.log( a * b);
+        }
+
+       
+        var c=25;
+        function cToF(c) {
+            console.log( c * 9/5 + 32);
+        }
+
+       
+        var num=-5;
+        function isPositive(num) {
+            return num > 0;
+        }
+
+       
+        var a= "Nelish";
+        var b= "Maharjan";
+        function joinStrings(a, b) {
+            console.log( a + " " + b);
+        }
+
+        
+        var num=15;
+        function divisibleByFive(num) {
+            console.log( num % 5 === 0);
+        }
+
+        
+        var length=5;
+        var width=10;
+        function rectangleArea(length, width) {
+            console.log( length * width);
+        }
+
+        
+        var a=10;
+        var b=20;
+        function smaller(a, b) {
+            console.log( a < b ? a : b);
+        }
+
+       
+        var num=7;
+        function betweenOneAndTen(num) {
+            console.log( (num >= 1 && num <= 10) ? "Yes" : "No");
+        }
+
+       
+        var char = 'e';
+
+function isVowel(char) {
+
+    if (
+        char === "a" || char === "A" ||
+        char === "e" || char === "E" ||
+        char === "i" || char === "I" ||
+        char === "o" || char === "O" ||
+        char === "u" || char === "U"
+    ) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+}
+
+isVowel(char);
+
+
+        
+        var word="hello";
+        function capitalize(word) {
+            return word.charAt(0).toUpperCase() + word.slice(1);
+        }
+
+        
+        var num=8;
+        function evenOrOdd(num) {
+            console.log( num % 2 === 0 ? "Even" : "Odd");
+        }
+
+        console.log("Numbers 1 to 10:");
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+        }
+
+        console.log("Numbers 10 to 1:");
+        for (let i = 10; i >= 1; i--) {
+            console.log(i);
+        }
+
+        console.log("Even numbers 1 to 20:");
+        for (let i = 2; i <= 20; i += 2) {
+            console.log(i);
+        }
+
+        console.log("Odd numbers 1 to 20:");
+        for (let i = 1; i <= 20; i += 2) {
+            console.log(i);
+        }
+
+        console.log("Multiplication table of 2:");
+        for (let i = 1; i <= 10; i++) {
+            console.log(`2 x ${i} = ${2 * i}`);
+        }
+
+        console.log("Multiplication table of 5:");
+        for (let i = 1; i <= 10; i++) {
+            console.log(`5 x ${i} = ${5 * i}`);
+        }
+
+        console.log("Sum of numbers from 1 to 10:");
+        let sum = 0;
+        for (let i = 1; i <= 10; i++) {
+            sum += i;
+        }
+        console.log(sum);
+
+        console.log("Numbers from 1 to 50 divisible by 5:");
+        for (let i = 1; i <= 50; i++) {
+            if (i % 5 === 0) {
+                console.log(i);
+            }
+        }
+    </script>
+    
+</body>
+</html>
