@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         const grade = (marks) => {
             if (marks >= 100 || marks < 0) {
                 return "invalid";
             }
-            else 
-            if (marks >= 33) {
+            else
+                if (marks >= 33) {
                     return "Fail";
-            } else if (marks >= 90) {
-                return "A+";
-            } else if (marks >= 80) {
-                return "A";
-            } else if (marks >= 70) {
-                return "B+";
-            } else if (marks >= 60) {
-                return "B";
-            } else if (marks >= 50) {
-                return "C";
-            } else {
-                return "F";
-            }
+                } else if (marks >= 90) {
+                    return "A+";
+                } else if (marks >= 80) {
+                    return "A";
+                } else if (marks >= 70) {
+                    return "B+";
+                } else if (marks >= 60) {
+                    return "B";
+                } else if (marks >= 50) {
+                    return "C";
+                } else {
+                    return "F";
+                }
         }
         let studentMarks = 20;
         console.log(`The grade for ${studentMarks} marks is: ${grade(studentMarks)}`);
     </script>
 </body>
+
 </html>
